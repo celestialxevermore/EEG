@@ -1,0 +1,64 @@
+{
+    "date": "2025-04-30",
+    "time": "00:41:57",
+    "mode": "pretrain",
+    "net": "EEGNet",
+    "dataset": "bcic4_2a",
+    "train_cont_path": null,
+    "source_subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+    ],
+    "target_subject": 8,
+    "labels": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "n_bands": 5,
+    "band": [
+        [
+            0,
+            42
+        ]
+    ],
+    "chans": "all",
+    "use_mutual_learning": false,
+    "use_multi_source_align": true,
+    "use_kl_alignment": false,
+    "use_domain_classifier": false,
+    "freq_loss_weight": 0.5,
+    "domain_loss_weight": 0.5,
+    "kl_loss_weight": 0.5,
+    "use_pretrained": false,
+    "pretrained_path": null,
+    "criterion": "CEE",
+    "opt": "Adam",
+    "metrics": [
+        "loss",
+        "acc"
+    ],
+    "lr": 0.0001,
+    "wd": 0.002,
+    "epochs": 50,
+    "batch_size": 72,
+    "scheduler": "exp",
+    "gamma": 0.999,
+    "eta_min": null,
+    "stamp": "c8",
+    "signature": null,
+    "save_path": "./result/8/c8/pretrain",
+    "gpu": "0",
+    "seed": 42,
+    "print_step": 5,
+    "extractor": "EEGNet",
+    "cuda_seed": 42,
+    "acc": 0.721
+}
